@@ -1,0 +1,60 @@
+:root {
+    --Yellow: #FFC017;
+    --Off-white: #F5F7FA;
+    --Black: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: var(--Off-white);
+    font-family: "Cabin", sans-serif;
+    min-height: 100vh;
+}
+
+.nav-link{
+    color: var(--Black);
+    transition: 0.3s;
+}
+
+.nav-link:hover{
+    color: var(--Yellow);
+}
+
+
+main { 
+    display: block;
+}
+
+.text{
+    font-family: "merriweather", serif;
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: -.05em;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+    padding-bottom: 30px;
+    width: 80%;
+}
+
+.pc {
+    padding-top: 60px;
+}
+
+.pb {
+    padding-bottom: 15px;
+}

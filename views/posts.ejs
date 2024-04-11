@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container py-3">
+<div class="compose-header p-3 pb-md-4 mx-auto text-left g-3">
+<div class="container py-3">
+<article class="blog-post">
+  <h2 class="display-5 link-body-emphasis mb-1"><%= post.title %></h2>
+  <p class="blog-post-meta"> <%= getFullDate %></p>
+  <p><%= post.content %></p>
+    <a class="btn btn-dark rounded-pill px-3" href="/<%= encodeURIComponent(post.title.trim())%>/delete">Delete</a>
+    <a class="btn btn-dark rounded-pill px-4" href="/<%= encodeURIComponent(post.title.trim())%>/edit">Edit</a>
+</article>
+</div>
+</div>
+</div>
+
+<%- include("partials/footer.ejs") %>
+

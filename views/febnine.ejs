@@ -1,0 +1,29 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container py-3">
+    <div class="compose-header p-3 pb-md-4 mx-auto text-left g-3">
+    <div class="container py-3">
+    <article class="blog-post">
+      <h2 class="display-5 link-body-emphasis mb-1">Parsing Data to EJS Templates</h2>
+      <p class="blog-post-meta"> <%= getFullDate %></p>
+      <p>In the lesson parsing data via EJS templates I wasn’t able to construct the correct code and a few things that I did wrong or needed to connect more dots 
+
+        I understand the idea that we needed to construct a website that showed the user one thing when they landed there and then after receiving inputs from the user it parsed the user input and then responded based on the user input 
+    
+        First we used the app.get and rendered the ejs file with the h1 telling the user to write their name in the form below 
+    
+        Using body parser we can take the inputs from the user and in our app.post write a const that adds the number of letters and render the index.ejs file with the key value pair key: const created
+    
+        Now we can write our function in the index.ejs file  our function will show the user the following 
+        If you havent inputted your name it will ask you to enter your name but if you have it will count the number of letters in your name and share that information to the user. 
+    
+        Two things to note 
+        When writing the if statement need the ejs tags but not around the h1</p>
+        <a class="btn btn-dark rounded-pill px-3" href="/delete">Delete</a>
+        <a class="btn btn-dark rounded-pill px-3" href="/edit">Edit</a>
+    </article>
+    </div>
+    </div>
+    </div>
+
+    <%- include("partials/footer.ejs") %>
